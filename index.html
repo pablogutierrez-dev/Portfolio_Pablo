@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- =========== UNICONS ========== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
+    <!-- =========== GOOGLE FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- =========== SWIPER CSS ========== -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- =========== CSS ========== -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- =========== SWIPER JS ========== -->
+    <script defer src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- =========== MAIN JS ========== -->
+    <script defer src="./assets/js/main.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -18,38 +26,38 @@
     <!-- =========== HEADER ========== -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Pablo Gutierrez</a>
+            <a href="#" class="nav__logo" title="Pablo Gutierrez">Pablo Gutierrez</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link active-link" title="home">
                             <i class="uil uil-home nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link" title="Sobre Mi">
                             <i class="uil uil-user nav__icon"></i> Sobre Mi
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" class="nav__link" title="Habilidades">
                             <i class="uil uil-file nav__icon"></i> Habilidades
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
+                        <a href="#services" class="nav__link" title="Servicios">
                             <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portafolio
+                        <a href="#portfolio" class="nav__link" title="Portfolio">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contactame
+                        <a href="#contact" class="nav__link" title="Contacto">
+                            <i class="uil uil-message nav__icon"></i> Contacto
                         </a>
                     </li>
                 </ul>
@@ -75,33 +83,33 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="http://www.linkedin.com" target="_blank" class="home__social-icon">
+                        <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="home__social-icon" title="Linkedin">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="http://www.github.com" target="_blank" class="home__social-icon">
+                        <a href="https://github.com/pablogutierrez-dev" target="_blank" rel="noopener noreferrer" class="home__social-icon" title="Github">
                             <i class="uil uil-github-alt"></i>
                         </a>
-                        <a href="./assets/CV_2022_Pablo Gutierrez Muñoz.pdf" download=""  class="home__social-icon">
+                        <a href="./assets/pdf//CV_2022_Pablo_Gutierrez_Muñoz.pdf" download="" class="home__social-icon" title="CV">
                             <i class="uil uil-file-alt"></i>
                         </a>
                     </div>
                     <picture class="home__img">
-                       <img src="./assets/img/Pablo_Foto_Carnet_2022-removebg-preview.png" alt="">
+                       <img src="./assets/img/Pablo_Foto_Carnet_2022-removebg-preview.png" alt="Pablo Foto">
                         
                     </picture>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hola, Soy Pablo</h1>
-                        <h2 class="home__subtitle">Frontend Developer</h2>
+                        <h2 class="home__title">Hola, Soy Pablo</h2>
+                        <h3 class="home__subtitle">Frontend Developer</h3>
                         <p class="home__description">Desarrollador Web, con muchas ganas de seguir aprendiendo, mejorar y trabajar.</p>
-                        <a href="#contact" class="button button--flex">
+                        <a href="#contact" class="button button--flex" title="Contactame">
                             Contactame <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
+                    <a href="#about" class="home__scroll-button button--flex" title="Scroll Abajo">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll abajo</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -116,7 +124,7 @@
             <span class="section__subtitle">Introduccion</span>
 
             <div class="about__container container grid">
-                <img src="./assets/img/about_1.jpg" alt="" class="about__image">
+                <img src="./assets/img/about_1.jpg" alt="" class="about__image" alt="about section image">
 
                 <div class="about__data">
                     <p class="about__description">Soy un Desarrollador Web con conocimientos de HTML, CSS y JS. <br> He trabajado toda mi vida ajeno a la programacion, hasta que, por diferentes situaciones, me tope con la posibilidad de realizar un Bootcamp de Desarrollador Web Full Stack. <br> He aprendido mucho estos meses, partiendo de cero. Me gustaria seguir formandome y trabajar de ello. Me considero una persona responsable y capaz de trabajar en equipo de manera competente. <br> Me encanta la musica, el cine y todo lo relacionado con lo digital. Te apetece que trabajemos juntos? </p>
@@ -133,7 +141,7 @@
                     </div>
 
                     <div class="about__buttons">
-                        <a href="./assets/CV_2022_Pablo Gutierrez Muñoz.pdf" download="" class="button button--flex">
+                        <a href="./assets/pdf/CV_2022_Pablo_Gutierrez_Muñoz.pdf" download="" class="button button--flex" title="CV">
                             Descarga mi CV<i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -154,8 +162,7 @@
                             <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Desarrolador Frontend</h1>
-                            
+                                <h2 class="skills__title">Desarrollador Frontend</h2>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
@@ -164,31 +171,24 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">HTML</h3>
-                                    <img class="skills__image" src="./assets/img/html.png" alt="">
+                                    <img class="skills__image" src="./assets/img/html.png" alt="html icon">
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">CSS</h3>
-                                    <img class="skills__image" src="./assets/img/css.png" alt="">
+                                    <img class="skills__image" src="./assets/img/css.png" alt="css icon">
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">JavaScript</h3>
-                                    <img class="skills__image" src="./assets/img/js.png" alt="">
+                                    <img class="skills__image" src="./assets/img/js.png" alt="js icon">
                                 </div>
-                                
                             </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">React</h3>
-                                    <img class="skills__image" src="./assets/img/react.png" alt="">
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -196,10 +196,8 @@
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-server-alt skills__icon"></i>
-
                             <div>
-                                <h1 class="skills__title">Desarrolador Backend</h1>
-                                
+                                <h2 class="skills__title">Desarrollador Backend</h2>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
@@ -208,30 +206,21 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">PHP</h3>
-                                    <img class="skills__image" src="./assets/img/php.png" alt="">
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__php"></span>
+                                    <img class="skills__image" src="./assets/img/php.png" alt="php icon">
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Node Js</h3>
-                                    <img class="skills__image" src="./assets/img/node_js.png" alt="">
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__node"></span>
+                                    <img class="skills__image" src="./assets/img/node_js.png" alt="node icon">
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Laravel</h3>
-                                    <img class="skills__image" src="./assets/img/laravel.png" alt="">
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__laravel"></span>
+                                    <img class="skills__image" src="./assets/img/laravel.png" alt="laravel icon">
                                 </div>
                             </div>
                         </div>
@@ -243,9 +232,8 @@
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-swatchbook skills__icon"></i>
-
                             <div>
-                                <h1 class="skills__title">Diseñador</h1>
+                                <h2 class="skills__title">Diseñador</h2>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
@@ -254,14 +242,14 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Figma</h3>
-                                    <img class="skills__image" src="./assets/img/figma.png" alt="">
+                                    <img class="skills__image" src="./assets/img/figma.png" alt="figma icon">
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Photoshop</h3>
-                                    <img class="skills__image" src="./assets/img/photoshop.png" alt="">
+                                    <img class="skills__image" src="./assets/img/photoshop.png" alt="photoshop icon">
                                 </div>
                             </div>
                         </div>
@@ -385,7 +373,6 @@
                             </div>
                             <div>
                                 <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
                             </div>
                         </div>
                     </div>
@@ -438,20 +425,19 @@
 
         <!-- =========== PORTFOLIO ========== -->
         <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portafolio</h2>
+            <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Mis trabajos recientes</span>
 
             <div class="portfolio__container container swiper">
                 <div class="swiper-wrapper">
                     <!-- =========== PORTFOLIO 1 ========== -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio_1.jpg" alt="portfolio_1" class="portfolio__img">
+                        <img src="./assets/img/sushihouse.png" alt="sushi house" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Heaven Is Life</h3>
-                            <p class="portfolio__description">Pagina web de una empresa eolica. Adaptable a todos los
-                                dispositivos.</p>
-                            <a href="#" target="_blank" title="heaven_web"
+                            <h3 class="portfolio__title">Sushi House</h3>
+                            <p class="portfolio__description">Pagina web de un restaurante japones ficticio.</p>
+                            <a href="#" rel="noopener noreferrer" target="_blank" title="Sushi House"
                                 class="button button--flex button--small portfolio__button">Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -459,13 +445,12 @@
                     </div>
                     <!-- =========== PORTFOLIO 2 ========== -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio_2.jpg" alt="portfolio_1" class="portfolio__img">
+                        <img src="./assets/img/glasses4u-landing.png" alt="glasses 4 u" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Brasil National Forest</h3>
-                            <p class="portfolio__description">Pagina web desarrollada para la reserva forestal de
-                                Brasil. Adaptable a todos los dispositivos.</p>
-                            <a href="#" target="_blank" title="heaven_web"
+                            <h3 class="portfolio__title">Glasses 4 U</h3>
+                            <p class="portfolio__description">Landing page de una tienda ficticia de venta de gafas.</p>
+                            <a href="#" rel="noopener noreferrer" target="_blank" title="Glasses 4 U"
                                 class="button button--flex button--small portfolio__button">Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -473,13 +458,38 @@
                     </div>
                     <!-- =========== PORTFOLIO 3 ========== -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio_3.jpg" alt="portfolio_1" class="portfolio__img">
+                        <img src="./assets/img/mueblesavenida.png" alt="muebles avenida" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Sea Life Tours</h3>
-                            <p class="portfolio__description">Pagina web de una empresa dedicada a organizar tours
-                                acuaticos. Adaptable a todos los dispositivos.</p>
-                            <a href="#" target="_blank" title="heaven_web"
+                            <h3 class="portfolio__title">Muebles Avenida</h3>
+                            <p class="portfolio__description">Pagina web de una tienda de venta de muebles y articulos de decoracion.</p>
+                            <a href="#" rel="noopener noreferrer" target="_blank" title="Muebles Avenida"
+                                class="button button--flex button--small portfolio__button">Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =========== PORTFOLIO 4 ========== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/blacklabel-landingClone.png" alt="black label" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Black Label Bilbao</h3>
+                            <p class="portfolio__description">Clon de la landing page de la web Black Label Bilbao.</p>
+                            <a href="#" rel="noopener noreferrer" target="_blank" title="Black Label"
+                                class="button button--flex button--small portfolio__button">Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =========== PORTFOLIO 3 ========== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/blogtype-japan.png" alt="night in japan" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">A Night In Japan</h3>
+                            <p class="portfolio__description">Landing page de un blog-look-a-like sobre la vida nocturna en Japon.</p>
+                            <a href="#" rel="noopener noreferrer" target="_blank" title="Night In Japan"
                                 class="button button--flex button--small portfolio__button">Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -505,12 +515,12 @@
                     <div class="project__data">
                         <h2 class="project__title">Tienes un nuevo proyecto?</h2>
                         <p class="project__description">Contactame y trabajemos juntos!!</p>
-                        <a href="#contact" class="button button--flex         button--white">Contactame
+                        <a href="#contact" class="button button--flex button--white" title="Contactame">Contactame
                             <i class="uil uil-message project__icon button__icon"></i>
                         </a>
                     </div>
 
-                    <img src="./assets/img/project_in_mind.jpg" alt="" class="project__img">
+                    <img src="./assets/img/project_in_mind.jpg" alt="project image" class="project__img">
                 </div>
             </div>
         </section>
@@ -535,7 +545,7 @@
 
                         <div>
                             <h3 class="contact__title">Email</h3>
-                            <span class="contact__subititle">pablogutierrrez@dev.com</span>
+                            <span class="contact__subititle">pablogutierrez@dev.com</span>
                         </div>
                     </div>
                     <div class="contact__information">
@@ -551,25 +561,25 @@
                 <form action="" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Nombre</label>
+                            <label class="contact__label">Nombre</label>
                             <input type="text" class="contact__input">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
+                            <label class="contact__label">Email</label>
                             <input type="email" class="contact__input">
                         </div>
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Asunto</label>
+                        <label class="contact__label">Asunto</label>
                         <input type="text" class="contact__input">
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Mensaje</label>
+                        <label class="contact__label">Mensaje</label>
                         <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="" class="button button--flex">
+                        <a href="" class="button button--flex" title="Enviar Mensaje">
                             Enviar Mensaje
                             <i class="uil uil-message button__icon"></i>
                         </a>
@@ -590,21 +600,21 @@
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#services" class="footer__link">Servicios</a>
+                        <a href="#services" class="footer__link" title="Servicios">Servicios</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="footer__link">Portafolio</a>
+                        <a href="#portfolio" class="footer__link" title="Portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer__link">Contacto</a>
+                        <a href="#contact" class="footer__link" title="Contacto">Contacto</a>
                     </li>
                 </ul>
 
                 <div class="footer__socials">
-                    <a href="https://www.linkedin.com" target="_blank" class="footer__social">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social" title="Linkedin">
                         <i class="uil uil-linkedin-alt"></i>
                     </a>
-                    <a href="https://www.github.com" target="_blank" class="footer__social">
+                    <a href="https://github.com/pablogutierrez-dev" target="_blank" rel="noopener noreferrer" class="footer__social" title="Github">
                         <i class="uil uil-github-alt"></i>
                     </a>
                 </div>
@@ -614,17 +624,10 @@
         </div>
     </footer>
 
-    <!-- =========== SCROLL TOP ========== -->
-    <a href="#" class="scrollup" id="scroll-up">
+      <!-- =========== SCROLL TOP ========== -->
+      <a href="#" class="scrollup" id="scroll-up" title="Scroll Top">
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
-
-    <!-- =========== SWIPER JS ========== -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-
-    <!-- =========== MAIN JS ========== -->
-    <script src="./assets/js/main.js"></script>
 </body>
-
 </html>

@@ -287,8 +287,9 @@ img {
 }
 
 .home__content {
-    grid-template-columns: 1fr 2fr;
-    padding-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2.5rem;
+    padding-left: 0.25rem;
     align-items: center;
 }
 
@@ -318,6 +319,7 @@ img {
 
 .home__data {
     grid-column: 1/3;
+    padding-left: 1rem;
 }
 
 .home__title {
@@ -416,8 +418,8 @@ img {
 
 /* ========== ABOUT ========== */
 .about__image {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
@@ -427,6 +429,7 @@ img {
 .about__description {
     text-align: left;
     margin-bottom: var(--mb-2-5);
+    padding: 0 0.75rem;
 }
 
 .about__info {
@@ -465,7 +468,7 @@ img {
 .skills__header {
     display: flex;
     align-items: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-2);
     cursor: pointer;
 }
 
@@ -481,11 +484,6 @@ img {
 
 .skills__title {
     font-size: var(--h3-font-size);
-}
-
-.skills__subtitle {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
 }
 
 .skills__list {
@@ -607,7 +605,7 @@ img {
 .services__content {
     position: relative;
     background-color: var(--container-color);
-    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    padding: 2.5rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
     transition: .3s;
@@ -708,7 +706,7 @@ img {
 }
 
 .portfolio__img {
-    width: 250px;
+    width: 265px;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -732,17 +730,17 @@ img {
 }
 
 .swiper-portfolio-icon {
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: var(--first-color);
 }
 
 .swiper-button-prev {
-    left: -.5rem;
+    left: -0.25rem;
     top: 5rem;
 }
 
 .swiper-button-next {
-    right: -.5rem;
+    right: -0.25rem;
     top: 5rem;
 }
 
@@ -989,15 +987,12 @@ img {
 
     .swiper-button-prev {
         left: -.5rem;
-        top: 9rem;
-        margin: 1rem;
-
+        top: 5rem;
     }
 
     .swiper-button-next {
         right: -.5rem;
-        top: 9rem;
-        margin: 1rem;
+        top: 5rem;
     }
 
     .project__img {
@@ -1026,6 +1021,25 @@ img {
     .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services__content {
+        width: 75%;
+        margin: auto;
+    }
+
+    .portfolio__button {
+        margin: 1.5rem 0;
+    }
+
+    .swiper-button-prev {
+        left: -0.75rem;
+        top: 5rem;
+    }
+    
+    .swiper-button-next {
+        right: -0.75rem;
+        top: 5rem;
     }
 
     .qualification__sections {
@@ -1089,7 +1103,7 @@ img {
     }
 
     .home__container {
-        row-gap: 5rem;
+        row-gap: 4rem;
     }
 
     .home__content {
@@ -1139,7 +1153,7 @@ img {
     }
 
     .services__container {
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(1, 600px);
         justify-content: center;
     }
 
@@ -1163,6 +1177,16 @@ img {
         align-items: center;
     }
 
+    .swiper-button-prev {
+        left: -0.5rem;
+        top: 6rem;
+    }
+    
+    .swiper-button-next {
+        right: -0.5rem;
+        top: 6rem;
+    }
+
     .project {
         text-align: initial;
     }
@@ -1183,18 +1207,26 @@ img {
         padding-top: .8rem;
     }
 
+    .contact__container {
+        padding: 0 1rem;
+    }
+
     .footer__container {
         align-items: center;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .footer__title {
+        font-size: 2rem;
     }
 
     .footer__bg {
-        padding: 3rem 0 3.5rem;
+        padding: 3rem 1rem 3.5rem;
     }
 
     .footer__links {
         flex-direction: row;
-        column-gap: 2rem;
+        column-gap: 2.5rem;
     }
 
     .footer__socials {
@@ -1208,6 +1240,7 @@ img {
     .footer__copy {
         margin-top: 4.5rem;
     }
+
 }
 
 /* for large devices */
@@ -1227,7 +1260,7 @@ img {
     }
 
     .services__container {
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(1, 600px);
     }
 
     .portfolio__content {

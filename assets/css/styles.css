@@ -24,7 +24,7 @@
 
     /* ===== Font and Typography ===== */
     --body-font: 'Poppins', sans-serif;
-
+    
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px,... */
     --big-font-size: 2rem;
     --h1-font-size: 1.75rem;
@@ -225,6 +225,7 @@ img {
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .4s;
     }
+    
 }
 
 .nav__list {
@@ -482,7 +483,7 @@ img {
     height: auto;
 }
 
-.skills__close .skills__list {
+ .skills__close .skills__list {
     height: 0;
     overflow: hidden;
 }
@@ -495,7 +496,6 @@ img {
 .skills__open .skills__arrow {
     transform: rotate(-180deg);
 }
-
 
 /* ========== QUALIFICATION ========== */
 .qualification__tabs {
@@ -1113,8 +1113,13 @@ img {
         justify-content: center;
     }
 
-    .skills__container {
-        width: 80%;
+    .skills__responsive {
+        display: grid;
+        grid-template-areas: "skills__content skills__content";
+    }
+
+    .skills__arrow {
+        margin-left: 1rem;
     }
 
     .qualification__tabs {

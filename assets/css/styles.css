@@ -396,6 +396,7 @@ img {
     font-size: var(--normal-font-size);
     font-family: var(--body-font);
     font-weight: var(--font-medium);
+    cursor: pointer;
 }
 
 

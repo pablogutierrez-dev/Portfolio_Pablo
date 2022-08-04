@@ -6,7 +6,6 @@
     /* ===== Colors ===== */
     /* Change favorite color */
     --hue-color: 230;
-    /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
 
     /* HSL Color Mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -399,7 +398,7 @@ img {
 .about__description {
     text-align: left;
     margin-bottom: var(--mb-2-5);
-    padding: 0 0.75rem;
+    padding: 0.5rem 0.75rem;
 }
 
 .about__info {
@@ -687,6 +686,11 @@ img {
 
 .portfolio__description {
     margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
 .portfolio__button:hover .button__icon {

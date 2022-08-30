@@ -4,7 +4,6 @@
     --header-height: 3rem;
 
     /* ===== Colors ===== */
-    /* Change favorite color */
     --hue-color: 230;
 
     /* HSL Color Mode */
@@ -16,8 +15,8 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #FFF;
+    --body-color: hsl(40, 35%, 95%);
+    --container-color: hsl(40, 35%, 85%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -59,11 +58,11 @@
     :root {
         --big-font-size: 3rem;
         --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
+        --h2-font-size: 2rem;
         --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+        --normal-font-size: 1.1rem;
+        --small-font-size: 1rem;
+        --smaller-font-size: .9rem;
     }
 }
 

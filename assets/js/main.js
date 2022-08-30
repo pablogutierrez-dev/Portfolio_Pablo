@@ -5,16 +5,13 @@ const navClose = document.getElementById('nav-close');
 
 
 /* ========== menu show ========== */
-/* Validate id constant exists */
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
-
 /* ========== menu remove ========== */
-/* Validate id constant exists */
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
@@ -27,7 +24,7 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
-    //when we click on each nav__link, we remove the show-menu class
+    //when click on each nav__link, removes the show-menu class
     navMenu.classList.remove('show-menu')
 }
 
@@ -115,26 +112,6 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
 });
 
 
-/* ========== TESTIMONIAL SWIPER ========== */
-let swiperTestimonial = new Swiper(".testimonial__container", {
-    lopp: true,
-    grabCursor: true,
-    spaceBetween: 48,
-
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
-
-    breakpoints: {
-        568: {
-            slidesPerView: 2,
-        }
-    }
-});
-
-
 /* ========== SCROLL SECTIONS ACTIVE LINK ========== */
 const sections = document.querySelectorAll('section[id]')
 
@@ -160,7 +137,7 @@ window.addEventListener('scroll', scrollActive)
 /* ========== CHANGE BACKGROUND HEADER ========== */
 function scrollHeader() {
     const nav = document.getElementById('header')
-    // when the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+    // when the scroll is greater than 80 viewport height, adds the scroll-header class to the header tag
     if (this.scrollY >= 80) nav.classList.add('scroll-header');
 
     else nav.classList.remove('scroll-header')
@@ -172,7 +149,7 @@ window.addEventListener('scroll', scrollHeader)
 /* ========== SHOW SCROLL UP ========== */
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up')
-    // when the scroll is higher than 560 viewport height, add the scroll-header class to the header tag
+    // when the scroll is higher than 560 viewport height, adds the scroll-header class to the header tag
     if(this.scrollY >= 560) scrollUp.classList.add('show-scroll');
     else scrollUp.classList.remove('show-scroll')
 }
@@ -185,17 +162,16 @@ const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
 
-//previously selected topic (if user selected)
+//previously selected topic (if selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-//we obtain the current theme that the interface has by validating the dark-theme class
+//obtains the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
-//we validate if the user previously chose a topic
+//validates if has been previously choosen a topic
 if (selectedTheme) {
-    //if the validation is fulfilled, we ask the issue was to know if we activated or deactivated the dark theme
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove']
 }
@@ -205,7 +181,7 @@ themeButton.addEventListener('click', () => {
     //add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    //we save the theme and the current icon that the user choose
+    //saves the theme and the current icon that has been choosen
     // localStorage.setItem('selected-theme', getCurrentTheme())
     // localStorage.setItem('selected-icon', getCurrentIcon())
 })

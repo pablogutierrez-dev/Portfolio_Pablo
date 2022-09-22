@@ -1,665 +1,857 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- =========== UNICONS ========== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.0/css/line.css"
+    />
     <!-- =========== GOOGLE FONTS ========== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- =========== SWIPER CSS ========== -->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!-- =========== CSS ========== -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- =========== SWIPER JS ========== -->
     <script defer src="./assets/js/swiper-bundle.min.js"></script>
     <!-- =========== MAIN JS ========== -->
     <script defer src="./assets/js/main.js"></script>
     <title>Pablo Gutiérrez Portafolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- =========== HEADER ========== -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo" title="Pablo Gutiérrez">Pablo Gutiérrez</a>
+      <nav class="nav container">
+        <a href="#" class="nav__logo" title="Pablo Gutiérrez"
+          >Pablo Gutiérrez</a
+        >
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link" title="home">
-                            <i class="uil uil-home nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link" title="Sobre Mí">
-                            <i class="uil uil-user nav__icon"></i> Sobre Mí
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link" title="Habilidades">
-                            <i class="uil uil-file nav__icon"></i> Habilidades
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link" title="Servicios">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link" title="Portfolio">
-                            <i class="uil uil-scenery nav__icon"></i> Portafolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link" title="Contacto">
-                            <i class="uil uil-message nav__icon"></i> Contacto
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link" title="home">
+                <i class="uil uil-home nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link" title="Sobre Mí">
+                <i class="uil uil-user nav__icon"></i> Sobre Mí
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link" title="Habilidades">
+                <i class="uil uil-file nav__icon"></i> Habilidades
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link" title="Servicios">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link" title="Portfolio">
+                <i class="uil uil-scenery nav__icon"></i> Portafolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link" title="Contacto">
+                <i class="uil uil-message nav__icon"></i> Contacto
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
 
-            <div class="nav__btns">
-                <!-- theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__btns">
+          <!-- theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- =========== MAIN ========== -->
     <main class="main">
-        <!-- =========== HOME ========== -->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/pablo-guti%C3%A9rrez-mu%C3%B1oz-97b558247/" target="_blank" rel="noopener noreferrer"
-                            class="home__social-icon" title="Linkedin">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="https://github.com/pablogutierrez-dev" target="_blank" rel="noopener noreferrer"
-                            class="home__social-icon" title="Github">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <a href="./assets/pdf/Pablo Gutierrez Muñoz.pdf" download="" class="home__social-icon"
-                            title="CV">
-                            <i class="uil uil-file-alt"></i>
-                        </a>
-                    </div>
-                    <picture class="home__img">
-                        <img src="./assets/img/Pablo_Foto_Carnet_2022-removebg-preview.png" alt="Pablo Foto">
-
-                    </picture>
-
-                    <div class="home__data">
-                        <h2 class="home__title">Hola, Soy Pablo</h2>
-                        <h3 class="home__subtitle">Frontend Developer</h3>
-                        <p class="home__description">Desarrollador Web, con muchas ganas de seguir aprendiendo, mejorar
-                            y trabajar.</p>
-                        <a href="#contact" class="button button--flex" title="Contáctame">
-                            Contáctame <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
+      <!-- =========== HOME ========== -->
+      <section class="home__section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/pablo-guti%C3%A9rrez-mu%C3%B1oz-97b558247/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home__social-icon"
+                title="Linkedin"
+              >
+                <i class="uil uil-linkedin-alt"></i
+              ></a>
+              <a
+                href="https://github.com/pablogutierrez-dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home__social-icon"
+                title="Github"
+              >
+                <i class="uil uil-github-alt"></i
+              ></a>
+              <a
+                href="./assets/pdf/Pablo Gutierrez Muñoz.pdf"
+                download=""
+                class="home__social-icon"
+                title="CV"
+              >
+                <i class="uil uil-file-alt"></i
+              ></a>
             </div>
-        </section>
+            <picture class="home__img">
+              <img
+                src="./assets/img/Pablo_Foto_Carnet_2022-removebg-preview.png"
+                alt="Pablo Foto"
+              />
+            </picture>
 
-        <!-- =========== ABOUT ========== -->
-        <section class="about section" id="about">
-            <h2 class="section__title">Sobre Mi</h2>
-            <span class="section__subtitle">Introducción</span>
-
-            <div class="about__container container grid">
-                <img src="./assets/img/about_3.jpg" alt="" class="about__image" alt="about section image">
-
-                <div class="about__data">
-                    <p class="about__description">Soy un Desarrollador Web con conocimientos de HTML, CSS y JS. He
-                        trabajado toda mi vida ajeno a la programación, hasta que, por diferentes situaciones, me tope
-                        con la posibilidad de realizar un bootcamp de Desarrollador Web Full Stack. He aprendido
-                        mucho estos meses partiendo de cero. Me gustaría seguir formándome y trabajar de ello. Me
-                        considero una persona responsable y capaz de trabajar en equipo de manera competente. Me
-                        encanta la música, el cine y todo lo relacionado con lo digital. Te apetece que trabajemos
-                        juntos? </p>
-
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">-1</span>
-                            <span class="about__info-name">Años <br> experiencia</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">05+</span>
-                            <span class="about__info-name">Proyectos <br> realizados</span>
-                        </div>
-                    </div>
-
-                    <div class="about__buttons">
-                        <a href="./assets/pdf/Pablo Gutierrez Muñoz.pdf" download="" class="button button--flex"
-                            title="CV">
-                            Descarga mi CV<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="home__data">
+              <h2 class="home__title">Hola, Soy Pablo</h2>
+              <h3 class="home__subtitle">Frontend Developer</h3>
+              <p class="home__description">
+                Desarrollador Web, con muchas ganas de seguir aprendiendo,
+                mejorar y trabajar.
+              </p>
+              <a href="#contact" class="button button--flex" title="Contáctame">
+                Contáctame <i class="uil uil-message button__icon"></i
+              ></a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- =========== SKILLS ========== -->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Habilidades</h2>
-            <span class="section__subtitle">Conocimientos Técnicos</span>
+      <!-- =========== ABOUT ========== -->
+      <section class="about section" id="about">
+        <h2 class="section__title">Sobre Mi</h2>
+        <span class="section__subtitle">Introducción</span>
 
-            <div class="skills__container container grid">
-                <div class="skills__responsive">
-                    <!-- =========== SKILLS 1 ========== -->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-                            <div>
-                                <h2 class="skills__title">Frontend Developer</h2>
-                            </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
+        <div class="about__container container grid">
+          <img
+            src="./assets/img/about_3.jpg"
+            alt=""
+            class="about__image"
+            alt="about section image"
+          />
 
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <img class="skills__image" src="./assets/img/html.png" alt="html icon">
-                                </div>
-                            </div>
+          <div class="about__data">
+            <p class="about__description">
+              Soy un Desarrollador Web con conocimientos de HTML, CSS, JS y
+              Laravel. He trabajado toda mi vida ajeno a la programación, hasta
+              que, por diferentes situaciones, me tope con la posibilidad de
+              realizar un bootcamp de Desarrollador Web Full Stack. He aprendido
+              mucho estos meses partiendo de cero. Me gustaría seguir formándome
+              y trabajar de ello. Me considero una persona responsable y capaz
+              de trabajar en equipo de manera competente. Me encanta la música,
+              el cine y todo lo relacionado con lo digital. Te apetece que
+              trabajemos juntos?
+            </p>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <img class="skills__image" src="./assets/img/css.png" alt="css icon">
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <img class="skills__image" src="./assets/img/js.png" alt="js icon">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- =========== SKILLS 2 ========== -->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-server-alt skills__icon"></i>
-                            <div>
-                                <h2 class="skills__title">Backend Developer</h2>
-                            </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">PHP</h3>
-                                    <img class="skills__image" src="./assets/img/php.png" alt="php icon">
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Node Js</h3>
-                                    <img class="skills__image" src="./assets/img/node_js.png" alt="node icon">
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Laravel</h3>
-                                    <img class="skills__image" src="./assets/img/laravel.png" alt="laravel icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">+1</span>
+                <span class="about__info-name">Año de experiencia</span>
+              </div>
+              <div>
+                <span class="about__info-title">+8</span>
+                <span class="about__info-name">Proyectos realizados</span>
+              </div>
             </div>
-        </section>
 
-        <!-- =========== QUALIFICATION ========== -->
-        <section class="qualification section">
-            <h2 class="section__title">Expediente</h2>
-            <span class="section__subtitle">Mi camino</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                        <i class="uil uil-graduation-cap qualification__icon"></i>Educación
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target='#work'>
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>Trabajo
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-                    <!-- =========== QUALIFICATION CONTENT 1 ========== -->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!-- =========== QUALIFICATION 1 ========== -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Graduado Escolar</h3>
-                                <span class="qualification__subtitle">
-                                    Getxo - Andra Mari Ikastetxea
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    1998
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-
-                        <!-- =========== QUALIFICATION 2 ========== -->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Titulo de Bachiller</h3>
-                                <span class="qualification__subtitle">
-                                    Erandio - Ategorri Tartanga
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    1998 - 2001
-                                </div>
-                            </div>
-                        </div>
-                        <!-- =========== QUALIFICATION 3 ========== -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Bootcamp Desarrollador Web Full Stack</h3>
-                                <span class="qualification__subtitle">
-                                    Aulab España
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021 - 2022
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- =========== QUALIFICATION CONTENT 2 ========== -->
-                    <div class="qualification__content" data-content id="work">
-                        <!-- =========== QUALIFICATION 1 ========== -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Dependiente</h3>
-                                <span class="qualification__subtitle">
-                                    Portugalete - Muebles Avenida
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2007 - 2012
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <!-- =========== QUALIFICATION 2 ========== -->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Propietario de Cafetería</h3>
-                                <span class="qualification__subtitle">
-                                    Getxo - Cafetería Bizkerre
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2012 - 2017
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- =========== QUALIFICATION 3 ========== -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Mozo de Almacén</h3>
-                                <span class="qualification__subtitle">
-                                    Basauri - CEVA Logistics.
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2018 - 2021
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="about__buttons">
+              <a
+                href="./assets/pdf/Pablo Gutierrez Muñoz.pdf"
+                download=""
+                class="button button--flex"
+                title="CV"
+              >
+                Descarga mi CV<i class="uil uil-download-alt button__icon"></i>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- =========== SERVICES ========== -->
-        <section class="services section" id="services">
-            <h2 class="section__title">Servicios</h2>
-            <span class="section__subtitle">Necesitas ayuda con tu proyecto?</span>
+      <!-- =========== SKILLS ========== -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Habilidades</h2>
+        <span class="section__subtitle">Conocimientos Técnicos</span>
 
-            <div class="services__container container grid">
-                <!-- =========== SERVICES 1 ========== -->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-arrow services__icon"></i>
-                        <h3 class="services__title">Desarrollador <br> Frontend</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        Ver más
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Desarrollador <br> Frontend</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Desarrollo de la interfaz de usuario.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Desarrollo de la página web.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Creación de elementos Ux interactivos.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =========== PORTFOLIO ========== -->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portafolio</h2>
-            <span class="section__subtitle">Mis trabajos recientes</span>
-
-            <div class="portfolio__container container swiper">
-                <div class="swiper-wrapper">
-                    <!-- =========== PORTFOLIO 1 ========== -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/sushihouse.png" alt="sushi house" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Sushi House</h3>
-                            <p class="portfolio__description">Página web de un restaurante japonés ficticio.</p>
-                            <div class="portfolio__buttons">
-                                <a href="https://sushi-house.netlify.app/" rel="noopener noreferrer" target="_blank"
-                                    title="Sushi House" class="button button--flex button--small portfolio__button">Web
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/pablogutierrez-dev/Sushi_House" rel="noopener noreferrer"
-                                    target="_blank" title="Sushi House"
-                                    class="button button--flex button--small portfolio__button">Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =========== PORTFOLIO 2 ========== -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/glasses4u-landing.png" alt="glasses 4 u" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Glasses 4 U</h3>
-                            <p class="portfolio__description">Landing page de una tienda ficticia de venta de gafas.</p>
-                            <div class="portfolio__buttons">
-                                <a href="https://glasses-4-u.netlify.app/" rel="noopener noreferrer" target="_blank"
-                                    title="Glasses 4 U" class="button button--flex button--small portfolio__button">Web
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a><a href="https://github.com/pablogutierrez-dev/Glasses_4_U"
-                                    rel="noopener noreferrer" target="_blank" title="Glasses 4 U"
-                                    class="button button--flex button--small portfolio__button">Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =========== PORTFOLIO 3 ========== -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/mueblesavenida.png" alt="muebles avenida" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Muebles Avenida</h3>
-                            <p class="portfolio__description">Página web de una tienda de venta de muebles y artículos
-                                de decoración.</p>
-                            <div class="portfolio__buttons">
-                                <a href="https://muebles-avenida.netlify.app/" rel="noopener noreferrer" target="_blank"
-                                    title="Muebles Avenida"
-                                    class="button button--flex button--small portfolio__button">Web
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/pablogutierrez-dev/Muebles_Avenida"
-                                    rel="noopener noreferrer" target="_blank" title="Muebles Avenida"
-                                    class="button button--flex button--small portfolio__button">Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =========== PORTFOLIO 4 ========== -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/blacklabel-landingClone.png" alt="black label" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Black Label Bilbao</h3>
-                            <p class="portfolio__description">Clon de la landing page de la web Black Label Bilbao.</p>
-                            <div class="portfolio__buttons">
-                                <a href="https://black-label-bilbao.netlify.app/" rel="noopener noreferrer"
-                                    target="_blank" title="Black Label"
-                                    class="button button--flex button--small portfolio__button">Web
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/pablogutierrez-dev/Black_Label_Bilbao_Clone"
-                                    rel="noopener noreferrer" target="_blank" title="Black Label"
-                                    class="button button--flex button--small portfolio__button">Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- =========== PORTFOLIO 5 ========== -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/blogtype-japan.png" alt="night in japan" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">A Night In Japan</h3>
-                            <p class="portfolio__description">Landing page de un blog-like sobre la vida nocturna
-                                en Japón.</p>
-                            <div class="portfolio__buttons">
-                                <a href="https://a-night-in-japan.netlify.app/" rel="noopener noreferrer"
-                                    target="_blank" title="Night In Japan"
-                                    class="button button--flex button--small portfolio__button">Web
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/pablogutierrez-dev/A_Night_In_Japan"
-                                    rel="noopener noreferrer" target="_blank" title="Night In Japan"
-                                    class="button button--flex button--small portfolio__button">Github
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <!-- =========== PROJECT IN MIND ========== -->
-        <section class="project section">
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">Tienes un nuevo proyecto?</h2>
-                        <p class="project__description">Contáctame y trabajemos juntos!!</p>
-                        <a href="#contact" class="button button--flex button--white" title="Contáctame">Contáctame
-                            <i class="uil uil-message project__icon button__icon"></i>
-                        </a>
-                    </div>
-
-                    <img src="./assets/img/project_in_mind.jpg" alt="project image" class="project__img">
-                </div>
-            </div>
-        </section>
-
-        <!-- =========== CONTACT ME ========== -->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contacto</h2>
-            <span class="section__subtitle">Ponte en contacto conmigo!</span>
-
-            <div class="contact__container container grid">
+        <div class="skills__container container grid">
+          <div class="skills__responsive">
+            <!-- =========== SKILLS (Frontend Developer) ========== -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
                 <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
+                  <h2 class="skills__title">Frontend Developer</h2>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
 
-                        <div>
-                            <h3 class="contact__title">Telefono</h3>
-                            <span class="contact__subititle">+ 34 627582498</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subititle">pablo.gutierrez.munoz@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Localizacion</h3>
-                            <span class="contact__subititle">Bilbao, Spain</span>
-                        </div>
-                    </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <img
+                      class="skills__image"
+                      src="./assets/img/html.png"
+                      alt="html icon"
+                    />
+                  </div>
                 </div>
 
-                <form name="formulario_portafolio" class="contact__form grid" netlify>
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="name" class="contact__label">Nombre</label>
-                            <input name="name" id="name" type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="email" class="contact__label">Email</label>
-                            <input name="email" id="email" type="email" class="contact__input">
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <label for="subject" class="contact__label">Asunto</label>
-                        <input name="subject" id="subject" type="text" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="message" class="contact__label">Mensaje</label>
-                        <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <img
+                      class="skills__image"
+                      src="./assets/img/css.png"
+                      alt="css icon"
+                    />
+                  </div>
+                </div>
 
-                    <div>
-                        <button type="submit" class="button--send">
-                            Enviar Mensaje
-                            <i class="uil uil-message button__icon"></i>
-                        </button>
-                    </div>
-                </form>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <img
+                      class="skills__image"
+                      src="./assets/img/js.png"
+                      alt="js icon"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+
+            <!-- =========== SKILLS (Backend Developer) ========== -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-server-alt skills__icon"></i>
+                <div>
+                  <h2 class="skills__title">Backend Developer</h2>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">PHP</h3>
+                    <img
+                      class="skills__image"
+                      src="./assets/img/php.png"
+                      alt="php icon"
+                    />
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Node Js</h3>
+                    <img
+                      class="skills__image"
+                      src="./assets/img/node_js.png"
+                      alt="node icon"
+                    />
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Laravel</h3>
+                    <img
+                      class="skills__image"
+                      src="./assets/img/laravel.png"
+                      alt="laravel icon"
+                    />
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MySQL</h3>
+                    <img
+                      class="skills__image"
+                      src="./assets/img/mysql.png"
+                      alt="mysql icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== QUALIFICATION ========== -->
+      <section class="qualification section">
+        <h2 class="section__title">Expediente</h2>
+        <span class="section__subtitle">Mi camino</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i
+              >Educación
+            </div>
+
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>Trabajo
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!-- =========== QUALIFICATION CONTENT 1 ========== -->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!-- =========== QUALIFICATION 1 ========== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Graduado Escolar</h3>
+                  <span class="qualification__subtitle">
+                    Getxo - Andra Mari Ikastetxea
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    1998
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!-- =========== QUALIFICATION 2 ========== -->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Titulo de Bachiller</h3>
+                  <span class="qualification__subtitle">
+                    Erandio - Ategorri Tartanga
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    1998 - 2001
+                  </div>
+                </div>
+              </div>
+              <!-- =========== QUALIFICATION 3 ========== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Bootcamp Desarrollador Web Full Stack
+                  </h3>
+                  <span class="qualification__subtitle"> Aulab España </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2022
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- =========== QUALIFICATION CONTENT 2 ========== -->
+            <div class="qualification__content" data-content id="work">
+              <!-- =========== QUALIFICATION 1 ========== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Dependiente</h3>
+                  <span class="qualification__subtitle">
+                    Portugalete - Muebles Avenida
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2007 - 2012
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!-- =========== QUALIFICATION 2 ========== -->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Propietario de Cafetería</h3>
+                  <span class="qualification__subtitle">
+                    Getxo - Cafetería Bizkerre
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2012 - 2017
+                  </div>
+                </div>
+              </div>
+
+              <!-- =========== QUALIFICATION 3 ========== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Mozo de Almacén</h3>
+                  <span class="qualification__subtitle">
+                    Basauri - CEVA Logistics.
+                  </span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2018 - 2021
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== SERVICES ========== -->
+      <section class="services section" id="services">
+        <h2 class="section__title">Servicios</h2>
+        <span class="section__subtitle">Necesitas ayuda con tu proyecto?</span>
+
+        <div class="services__container container grid">
+          <!-- =========== SERVICES 1 ========== -->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-arrow services__icon"></i>
+              <h3 class="services__title">
+                Desarrollador <br />
+                Frontend
+              </h3>
+            </div>
+
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              Ver más
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Desarrollador <br />
+                  Frontend
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Desarrollo de la interfaz de usuario.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Desarrollo de la página web.</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Creación de elementos Ux interactivos.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== PORTFOLIO ========== -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portafolio</h2>
+        <span class="section__subtitle">Mis trabajos recientes</span>
+
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!-- =========== PORTFOLIO 1 ========== -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./assets/img/sushihouse.png"
+                alt="sushi house"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Sushi House</h3>
+                <p class="portfolio__description">
+                  Página web de un restaurante japonés ficticio.
+                </p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://sushi-house.netlify.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Sushi House"
+                    class="button button--flex button--small portfolio__button"
+                    >Web <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                  <a
+                    href="https://github.com/pablogutierrez-dev/Sushi_House"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Sushi House"
+                    class="button button--flex button--small portfolio__button"
+                    >Github <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- =========== PORTFOLIO 2 ========== -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./assets/img/glasses4u-landing.png"
+                alt="glasses 4 u"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Glasses 4 U</h3>
+                <p class="portfolio__description">
+                  Landing page de una tienda ficticia de venta de gafas.
+                </p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://glasses-4-u.netlify.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Glasses 4 U"
+                    class="button button--flex button--small portfolio__button"
+                    >Web <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                  <a
+                    href="https://github.com/pablogutierrez-dev/Glasses_4_U"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Glasses 4 U"
+                    class="button button--flex button--small portfolio__button"
+                    >Github <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- =========== PORTFOLIO 3 ========== -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./assets/img/mueblesavenida.png"
+                alt="muebles avenida"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Muebles Avenida</h3>
+                <p class="portfolio__description">
+                  Página web de una tienda de venta de muebles y artículos de
+                  decoración.
+                </p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://muebles-avenida.netlify.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Muebles Avenida"
+                    class="button button--flex button--small portfolio__button"
+                    >Web <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                  <a
+                    href="https://github.com/pablogutierrez-dev/Muebles_Avenida"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Muebles Avenida"
+                    class="button button--flex button--small portfolio__button"
+                    >Github <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- =========== PORTFOLIO 4 ========== -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./assets/img/blacklabel-landingClone.png"
+                alt="black label"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Black Label Bilbao</h3>
+                <p class="portfolio__description">
+                  Clon de la landing page de la web Black Label Bilbao.
+                </p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://black-label-bilbao.netlify.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Black Label"
+                    class="button button--flex button--small portfolio__button"
+                    >Web <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                  <a
+                    href="https://github.com/pablogutierrez-dev/Black_Label_Bilbao_Clone"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Black Label"
+                    class="button button--flex button--small portfolio__button"
+                    >Github <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- =========== PORTFOLIO 5 ========== -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./assets/img/blogtype-japan.png"
+                alt="night in japan"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">A Night In Japan</h3>
+                <p class="portfolio__description">
+                  Landing page de un blog-like sobre la vida nocturna en Japón.
+                </p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://a-night-in-japan.netlify.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Night In Japan"
+                    class="button button--flex button--small portfolio__button"
+                    >Web <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                  <a
+                    href="https://github.com/pablogutierrez-dev/A_Night_In_Japan"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Night In Japan"
+                    class="button button--flex button--small portfolio__button"
+                    >Github <i class="uil uil-arrow-right button__icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- =========== PROJECT IN MIND ========== -->
+      <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">Tienes un nuevo proyecto?</h2>
+              <p class="project__description">
+                Contáctame y trabajemos juntos!!
+              </p>
+              <a
+                href="#contact"
+                class="button button--flex button--white"
+                title="Contáctame"
+                >Contáctame
+                <i class="uil uil-message project__icon button__icon"></i>
+              </a>
+            </div>
+
+            <img
+              src="./assets/img/project_in_mind.jpg"
+              alt="project image"
+              class="project__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== CONTACT ME ========== -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contacto</h2>
+        <span class="section__subtitle">Ponte en contacto conmigo!</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Telefono</h3>
+                <span class="contact__subititle">+ 34 627582498</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subititle"
+                  >pablo.gutierrez.munoz@gmail.com</span
+                >
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Localizacion</h3>
+                <span class="contact__subititle">Bilbao, Spain</span>
+              </div>
+            </div>
+          </div>
+
+          <form name="formulario_portafolio" class="contact__form grid" netlify>
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="name" class="contact__label">Nombre</label>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  class="contact__input"
+                />
+              </div>
+              <div class="contact__content">
+                <label for="email" class="contact__label">Email</label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  class="contact__input"
+                />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="subject" class="contact__label">Asunto</label>
+              <input
+                name="subject"
+                id="subject"
+                type="text"
+                class="contact__input"
+              />
+            </div>
+            <div class="contact__content">
+              <label for="message" class="contact__label">Mensaje</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="button--send">
+                Enviar Mensaje
+                <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- =========== FOOTER ========== -->
     <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Pablo Gutiérrez</h1>
-                    <span class="footer__subtitle">Desarrollador Frontend</span>
-                </div>
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Pablo Gutiérrez</h1>
+            <span class="footer__subtitle">Desarrollador Frontend</span>
+          </div>
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#services" class="footer__link" title="Servicios">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link" title="Portfolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link" title="Contacto">Contacto</a>
-                    </li>
-                </ul>
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link" title="Servicios"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link" title="Portfolio"
+                >Portafolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="footer__link" title="Contacto"
+                >Contacto</a
+              >
+            </li>
+          </ul>
 
-                <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/pablo-guti%C3%A9rrez-mu%C3%B1oz-97b558247/" target="_blank" rel="noopener noreferrer" class="footer__social"
-                        title="Linkedin">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://github.com/pablogutierrez-dev" target="_blank" rel="noopener noreferrer"
-                        class="footer__social" title="Github">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-                </div>
-            </div>
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/pablo-guti%C3%A9rrez-mu%C3%B1oz-97b558247/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              title="Linkedin"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://github.com/pablogutierrez-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              title="Github"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- =========== SCROLL TOP ========== -->
     <a href="#" class="scrollup" id="scroll-up" title="Scroll Top">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
+      <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
-
-</body>
-
+  </body>
 </html>

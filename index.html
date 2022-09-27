@@ -723,7 +723,7 @@
 
               <div>
                 <h3 class="contact__title">Telefono</h3>
-                <span class="contact__subititle">+ 34 627582498</span>
+                <span class="contact__subititle">+34 627582498</span>
               </div>
             </div>
             <div class="contact__information">
@@ -732,7 +732,7 @@
               <div>
                 <h3 class="contact__title">Email</h3>
                 <span class="contact__subititle"
-                  >pablo.gutierrez.munoz@gmail.com</span
+                  >info@pablogutierrezdev.com</span
                 >
               </div>
             </div>
@@ -746,7 +746,7 @@
             </div>
           </div>
 
-          <form name="formulario_portafolio" class="contact__form grid" netlify>
+          <form action="email.php" method="post" name="formulario_portafolio" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="name" class="contact__label">Nombre</label>
@@ -755,6 +755,7 @@
                   id="name"
                   type="text"
                   class="contact__input"
+                  required
                 />
               </div>
               <div class="contact__content">
@@ -764,6 +765,7 @@
                   id="email"
                   type="email"
                   class="contact__input"
+                  required
                 />
               </div>
             </div>
@@ -774,6 +776,7 @@
                 id="subject"
                 type="text"
                 class="contact__input"
+                required
               />
             </div>
             <div class="contact__content">
@@ -784,9 +787,9 @@
                 cols="0"
                 rows="7"
                 class="contact__input"
+                required
               ></textarea>
             </div>
-
             <div>
               <button type="submit" class="button--send">
                 Enviar Mensaje

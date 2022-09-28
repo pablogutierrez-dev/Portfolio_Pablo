@@ -781,7 +781,6 @@ img {
 
 /* ========== CONTACT ========== */
 .contact__container {
-    position: relative;
     row-gap: 3rem;
 }
 
@@ -846,24 +845,31 @@ img {
 }
 
 .contact__modal-content {
+    position: relative;
     background-color: var(--container-color);
-    padding: 1.5rem;
+    padding: 1.75rem;
     border-radius: .5rem;
 }
 
 .contact__modal-title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .contact__modal-close {
     position: absolute;
-    top: .5rem;
+    top: 0;
     right: .5rem;
     font-size: 1.75rem;
     color: var(--first-color);
     cursor: pointer;
+}
+
+/* Active Modal */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
 }
 
 

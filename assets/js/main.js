@@ -117,12 +117,15 @@ const formModalClose = document.getElementById('form__modal-close');
 
 formButton.addEventListener('click', () => {
     formModal.classList.add('active-modal');
-    formModalClose.classList.remove('active-modal');
+    setTimeout( () => {
+        formModal.classList.remove('active-modal');
+    },3000)
 })
 
 formModalClose.addEventListener('click', () => {
     formModal.classList.remove('active-modal');
 })
+
 
 /* ========== SCROLL SECTIONS ACTIVE LINK ========== */
 const sections = document.querySelectorAll('section[id]')

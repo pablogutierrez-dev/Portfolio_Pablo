@@ -14,10 +14,10 @@ if (isset($_POST["name"]) && !empty($_POST["name"])
     <html>
         <body>
             <ul>
-                <li>Nombre : '.$name.'</li>
-                <li>Email : '.$email.'</li>
-                <li>Asunto : '.$subject.'</li>
-                <li>Mensaje : '.$message.'</li>        
+                <li>Nombre : '.$name.'</li><br>
+                <li>Email : '.$email.'</li><br>
+                <li>Asunto : '.$subject.'</li><br>
+                <li>Mensaje : '.$message.'</li><br>       
             </ul>
         </body>
     </html>';
@@ -26,8 +26,12 @@ if (isset($_POST["name"]) && !empty($_POST["name"])
 
     mail($destino, $asunto, $contenido, $headers);
 
-    header('Location:index.html'); 
+    sleep(4);
+    header("Location: ../../index.html", true, 303);
+    exit;
+    
     }else {
         echo"Error de envio";
     }
 ?>
+        

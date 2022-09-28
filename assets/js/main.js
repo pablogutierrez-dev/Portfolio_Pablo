@@ -95,7 +95,6 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-
 /* ========== PORTFOLIO SWIPER ========== */
 let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true,
@@ -111,6 +110,19 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
     },
 });
 
+/* ========== FORM MODAL ========== */
+const formModal = document.getElementById('form__modal');  
+const formButton = document.getElementById('form__button');
+const formModalClose = document.getElementById('form__modal-close');
+
+formButton.addEventListener('click', () => {
+    formModal.classList.add('active-modal');
+    formModalClose.classList.remove('active-modal');
+})
+
+formModalClose.addEventListener('click', () => {
+    formModal.classList.remove('active-modal');
+})
 
 /* ========== SCROLL SECTIONS ACTIVE LINK ========== */
 const sections = document.querySelectorAll('section[id]')

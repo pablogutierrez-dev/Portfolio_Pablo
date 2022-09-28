@@ -1,31 +1,33 @@
 <?php
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
-
-//echo $email . " " . $subject . " " . $message;
-
-$destinatario = "pablo.grothcrew@hotmail.com";
-$asunto = "Envio de prueba de correo";
-$cuerpo =  '
+if (isset($_POST["name"]) && !empty($_POST["name"])
+&& isset($_POST["email"]) && !empty($_POST["email"])
+&& isset($_POST["subject"]) && !empty($_POST["subject"])
+&& isset($_POST["message"]) && !empty($_POST["message"]) ){
+    
+    $destino = "info@pablogutierrezdev.com";
+    $asunto = 'Email from Portfolio';
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $contenido =' 
     <html>
-    <head>Prueba</head>
-    <body>
-        <h1>Prueba de email</h1>
-    </body>
-    </html>
-';
+        <body>
+            <ul>
+                <li>Nombre : '.$name.'</li>
+                <li>Email : '.$email.'</li>
+                <li>Asunto : '.$subject.'</li>
+                <li>Mensaje : '.$message.'</li>        
+            </ul>
+        </body>
+    </html>';
+    
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-$headers = "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+    mail($destino, $asunto, $contenido, $headers);
 
-$headers .= "FROM: $name <$email>\r\n";
-mail($destinatario,$asunto,$cuerpo,$headers);
-
-echo "Correo Enviado";
-
+    header('Location:index.html'); 
+    }else {
+        echo"Error de envio";
+    }
 ?>
-
-<a href="index.html"> Volver </a>

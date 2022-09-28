@@ -781,6 +781,7 @@ img {
 
 /* ========== CONTACT ========== */
 .contact__container {
+    position: relative;
     row-gap: 3rem;
 }
 
@@ -825,6 +826,45 @@ img {
     border: none;
     outline: none;
     padding: .25rem .5rem .5rem 0;
+}
+
+.contact__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.contact__modal-content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.contact__modal-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-top: 1.5rem;
+}
+
+.contact__modal-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 1.75rem;
+    color: var(--first-color);
+    cursor: pointer;
 }
 
 
